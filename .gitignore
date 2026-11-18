@@ -1,0 +1,16 @@
+# données (trop volumineuses pour git)
+data/*
+!data/.gitkeep
+
+# python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# os / ide
+.DS_Store
+Thumbs.db
+.vscode/
+.env
