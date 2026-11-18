@@ -61,7 +61,7 @@ pip install -r requirements.txt
 
 source : NOAA Global Hourly (ISD), un fichier csv par station et par année. l'adresse d'origine (`ncei.noaa.gov/data/global-hourly/access/`) renvoie maintenant une page html : on télécharge les mêmes fichiers depuis le bucket public NOAA sur AWS (`noaa-global-hourly-pds`).
 
-période : 2021 → 2025. le jeu ISD n'est plus alimenté depuis octobre 2025 (NOAA l'a remplacé par GHCNh), donc 2025 est incomplète et 2026 n'existe pas.
+période : 2021 → 2025. le jeu ISD s'arrête fin août 2025 (NOAA l'a remplacé par GHCNh), donc 2025 est incomplète et 2026 n'existe pas.
 
 ```powershell
 # 1. liste des stations françaises
