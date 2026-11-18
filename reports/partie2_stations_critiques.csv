@@ -1,0 +1,327 @@
+sid,city,name,capacite,lat,lon,vide_pointe,pleine_pointe,action,urgence
+le-velo-star:04c6a6474c4b5a9fd449a2502ec789f9,Rennes,Cucillé - Frac,25.0,48.128788,-1.698129,1.0,0.0,réapprovisionner,1.0
+velo:97f866169fc5e7039be4aabe37ebd7df,Toulouse,RENAN - VITRY,18.0,43.635856,1.443828,1.0,0.0,réapprovisionner,1.0
+velo:f83461de3e52cf634833a810d3f01dd0,Toulouse,PLACE DE LA DAURADE,23.0,43.601888,1.440368,0.0,1.0,délester,1.0
+velo:f1129d77034e2451a790cbcec9dc5a36,Toulouse,SEPT DENIERS - TROÈNES,13.0,43.620967,1.412027,0.0,1.0,délester,1.0
+velo:ef54039a371175c86cf76f5afd76e69b,Toulouse,MONT LOUIS –AV. DE TOULOUSE,16.0,43.649377,1.472726,0.0,1.0,délester,1.0
+velo:da1b2e93a896c3585e9dee179e992b5e,Toulouse,00085 - BARCELONE - LECLERC,22.0,43.606847,1.430615,0.0,1.0,délester,1.0
+velo:d88a09fa3e67078e0dd035d17711941a,Toulouse,CITÉ DE L'ESPACE,13.0,43.586894,1.492386,0.0,1.0,délester,1.0
+velo:b954c6d9e4245560fb33fa43a7c038b8,Toulouse,FER À CHEVAL - COURS DILLON,21.0,43.593227,1.435062,1.0,0.0,réapprovisionner,1.0
+velo:97b78a916b55907a78a765a8a17b5d15,Toulouse,POIDS DE L'HUILE,17.0,43.60419,1.445475,0.0,1.0,délester,1.0
+velomagg:0f405bdb61ac724f41b316a5d6a60593,Montpellier,Jean de Beins,15.0,43.609857,3.883884,1.0,0.0,réapprovisionner,1.0
+velo:891d7faa2d1d84ad3b901d1af25a428a,Toulouse,PLACE DU FER À CHEVAL,18.0,43.592366,1.434121,1.0,0.0,réapprovisionner,1.0
+velo:7b4371197a439bdc89fe5498d625c052,Toulouse,CASTRES - LASBORDES,12.0,43.594671,1.488444,0.0,1.0,délester,1.0
+velo:74c520437f478a4e298f4862c7cb5db3,Toulouse,SUISSE - CH. D'AUZEVILLE,16.0,43.539216,1.478144,1.0,0.0,réapprovisionner,1.0
+velo:6eb3a5104906c2b5edcc7221c69f4cad,Toulouse,ST-SERNIN - GATIEN-ARNOULT,15.0,43.609022,1.441105,1.0,0.0,réapprovisionner,1.0
+velo:6d19045e0c0a19751e781191351a5455,Toulouse,EGLISE SAINT-SIMON,13.0,43.557175,1.381013,0.0,1.0,délester,1.0
+velo:6ca2ba086d5f069b59612f941c6cb273,Toulouse,00142 - LYCEE DÉODAT DE SÉVERAC,19.0,43.588046,1.42436,1.0,0.0,réapprovisionner,1.0
+velomagg:0b946130caa8aa1d504a80ce61ed8960,Montpellier,Parvis Jules Ferry - Gare Saint-Roch,8.0,43.603889,3.879362,1.0,0.0,réapprovisionner,1.0
+velomagg:12b8965e65c7a9305f0253f5ad8e0efd,Montpellier,Les Arceaux,8.0,43.612659,3.867734,1.0,0.0,réapprovisionner,1.0
+velov:2b084456d7c77678a029686f77df1bbb,Lyon,5053 - SAINT-JUST,17.0,45.75597,4.818904,1.0,0.0,réapprovisionner,1.0
+velomagg:f43a061a95929a9c2591c2373b45d84c,Montpellier,Place Viala,8.0,43.616812,3.855075,1.0,0.0,réapprovisionner,1.0
+velov:1e4916d3d22089ee30d9486834167a07,Lyon,CALUIRE - BRANLY / PASTEUR,12.0,45.79169,4.843452,0.0,1.0,délester,1.0
+velov:1166803a7678971807dfe7b3fd1bbf60,Lyon,CHARCOT / RÉSIDENCE UNIVERSITAIRE,32.0,45.755054,4.807811,1.0,0.0,réapprovisionner,1.0
+velov:0aa29c3842082cf852808ac4f9005c7a,Lyon,PÊCHERIE,14.0,45.765944,4.831089,1.0,0.0,réapprovisionner,1.0
+velov:086a63b95c4675539cba2860dddd253a,Lyon,CHÂTEAU GAILLARD / FORT,16.0,45.774754,4.887977,1.0,0.0,réapprovisionner,1.0
+velov:057888a751b49d2ba5334fa57c14e033,Lyon,PLACE AMPÈRE,9.0,45.753049,4.828297,1.0,0.0,réapprovisionner,1.0
+velov:04eaa595562c7ed6d154426677e7238e,Lyon,PARC DE GERLAND,24.0,45.724352,4.826821,0.0,1.0,délester,1.0
+velomagg:c484c018d4bc1f9e37e9575afd7ac69d,Montpellier,Gambetta,7.0,43.607106,3.870693,1.0,0.0,réapprovisionner,1.0
+velomagg:634da73815a15466db3f6e9c0f0fbbb6,Montpellier,Saint-Guilhem - Courreau,8.0,43.608996,3.872752,1.0,0.0,réapprovisionner,1.0
+velomagg:c09d08978d3fbee780d89fd53b79fe1e,Montpellier,Plan Cabanes,12.0,43.608491,3.868389,1.0,0.0,réapprovisionner,1.0
+velomagg:be38bd2e3eb7797aeb50d8e6aab59c13,Montpellier,Fac de Lettres,12.0,43.630437,3.869539,1.0,0.0,réapprovisionner,1.0
+velomagg:bb53a3b4f9bbe58f3d10bb8bcdc69e70,Montpellier,Médiathèque Emile Zola,15.0,43.608218,3.89314,1.0,0.0,réapprovisionner,1.0
+velomagg:b93620586448821632b061cd1675e011,Montpellier,Tonnelles,8.0,43.615155,3.839466,1.0,0.0,réapprovisionner,1.0
+velomagg:b45a4b88a4472ad672107b54880fbd8a,Montpellier,Euromédecine,8.0,43.639119,3.828199,1.0,0.0,réapprovisionner,1.0
+velomagg:759e034eb90e0ea60ba9c88fbe62015c,Montpellier,Rondelet,16.0,43.603038,3.875796,1.0,0.0,réapprovisionner,1.0
+velo:6be2b885b3ffa0db76c88adfe700d847,Toulouse,DUMÉRIL - LAMARCK,20.0,43.592349,1.449015,1.0,0.0,réapprovisionner,1.0
+velo:6b258b4e7b10d0c7f1292fa730d2f9b9,Toulouse,RIEUX - LEYGUE,18.0,43.594117,1.465197,1.0,0.0,réapprovisionner,1.0
+velo:49c8405c4cb18ae41bb2dd526aea54b7,Toulouse,BILLIERES - ROGUET,20.0,43.596889,1.426109,1.0,0.0,réapprovisionner,1.0
+velib:e2be9269ddf56bd585c39c93a5262c19,Paris,Cadet - La Fayette,19.0,48.875601632672,2.3435704037547,0.0,1.0,délester,1.0
+velib:eef2e138616e2d6ebdd1c54ad98a460f,Paris,Nanterre - Université,15.0,48.901365,2.212693,0.0,1.0,délester,1.0
+velib:ee2651f0a35203332b41f4e64a2358a6,Paris,Jacquier - Didot,30.0,48.82953336292279,2.318179272115231,1.0,0.0,réapprovisionner,1.0
+velib:ed0463d727df1ad32249367a3f5636ec,Paris,Hôtel de Ville de Nanterre,38.0,48.892371898250424,2.205548956990242,0.0,1.0,délester,1.0
+velib:e93278eac767441895ba871be8792d02,Paris,Sèvres - Général Leclerc,29.0,48.830121559055,2.2314262390137,0.0,1.0,délester,1.0
+velib:e913cb0d86c2ad44b1c227214b67335f,Paris,Stephenson - Doudeauville,36.0,48.888537048944826,2.3561610281467438,1.0,0.0,réapprovisionner,1.0
+velib:e8c0f773f633d966151d5adf76666915,Paris,Jean Jaurès - Jean Baptiste Clément ,39.0,48.84576261454011,2.2369650006294255,1.0,0.0,réapprovisionner,1.0
+velib:e0b7c7102b57a7927f6399f053c1d248,Paris,Senard - Charles Blum,24.0,48.857315824799,2.221091687679291,0.0,1.0,délester,1.0
+velo:42bf7f4ff093a4e91115a7464d58a4de,Toulouse,STADE TOULOUSAIN,30.0,43.620607,1.415125,0.0,1.0,délester,1.0
+velib:df01dc24a762fa5b2ad6135745f3eb55,Paris,Place de l'Eglise - Vitry-sur-Seine,27.0,48.791922819921815,2.395057752728462,0.0,1.0,délester,1.0
+velib:de81055bd76c6693a0e6b299185ebd56,Paris,Verdun - Pierre et Marie Curie,26.0,48.812822398263286,2.3707106709480286,1.0,0.0,réapprovisionner,1.0
+velib:ddc2bea56baf96f6596fa66d6f3477fc,Paris,Italie - Jardin Joan Miro,26.0,48.81990914045756,2.3592948541045193,1.0,0.0,réapprovisionner,1.0
+velib:dbf093a8a73193e48da63e83518e7fa5,Paris,Lepic - Armée d'Orient,24.0,48.887536403814,2.3343077301979,1.0,0.0,réapprovisionner,1.0
+velib:d77c30d480348d7f414d601b7198e75b,Paris,Maine - Liancourt,27.0,48.835064363954,2.323731449974,1.0,0.0,réapprovisionner,1.0
+velib:d658ad28796a6b9db0237989b29cf0f3,Paris,Moulin de la Pointe,21.0,48.82092946051445,2.3563179373741145,1.0,0.0,réapprovisionner,1.0
+velib:f0af939d05e1c8c16c1d00741963a964,Paris,Batignolles - Abel Truchet,27.0,48.883103904582,2.3238347490884,1.0,0.0,réapprovisionner,1.0
+velib:f69b6961ea8e4632e8c8049b2fde6e9b,Paris,Mairie du 16ème,35.0,48.863936848471994,2.2765953093767166,1.0,0.0,réapprovisionner,1.0
+velib:f7ac01cb43e86fa9cbf325881621371a,Paris,Dupont de l'Eure - Gambetta,29.0,48.8679385,2.4003649,1.0,0.0,réapprovisionner,1.0
+le-velo-star:7b9ead8f839c276e389d6151a42f67b3,Rennes,République,1.0,48.110026,-1.678037,1.0,0.0,réapprovisionner,1.0
+velib:f8f9ec30d28856f9b7fad103be9e4674,Paris,Toudouze - Clauzel,21.0,48.87929591733507,2.3373600840568547,1.0,0.0,réapprovisionner,1.0
+velib:fbaf6d3fa0223f131397ed46900ea8b1,Paris,Victoire - Chaussée d'Antin,24.0,48.875065791004396,2.3316738009452824,0.0,1.0,délester,1.0
+velib:fbe61ad04d6c46abb0dffccb4c8c7970,Paris,Chancé Milly - Cimetière Communal Sud,32.0,48.89687189382465,2.303922325372696,1.0,0.0,réapprovisionner,1.0
+velib:ff670cd94cced5c75e82e9e0c397c894,Paris,Belleville - Porte des Lilas,31.0,48.87660391892763,2.404769691129476,1.0,0.0,réapprovisionner,1.0
+velib:ff8b291ae855c29a6579af208df17b14,Paris,Place de la Division Leclerc,33.0,48.793824988636516,2.2731140430551027,1.0,0.0,réapprovisionner,1.0
+velo:0100de3346031875734126117061f78d,Toulouse,00086 - HÉRACLÈS - BÉARNAIS,20.0,43.608004,1.428585,0.0,1.0,délester,1.0
+velo:07f6da5ed4da85ef4061346276e5e098,Toulouse,FONTAINES - BRUN,11.0,43.600241,1.42564,1.0,0.0,réapprovisionner,1.0
+velo:18b8b474e263a381a7384ac650648ad5,Toulouse,TROIS COCUS MÉTRO,19.0,43.638055,1.444344,1.0,0.0,réapprovisionner,1.0
+velo:1eea8c2ddd69be40ddf71b331d61af06,Toulouse,RUE DE CUGNAUX - GRAVETTE,17.0,43.593147,1.424313,1.0,0.0,réapprovisionner,1.0
+velo:37799e07c79bbd7a504ec80730ed3565,Toulouse,LAVAUR - DALOU,13.0,43.622578,1.462668,1.0,0.0,réapprovisionner,1.0
+velo:3e02ea88115a95402f1d1bf53c613489,Toulouse,AV . DE RANGUEIL  - BEDOUCE,15.0,43.576773,1.454742,1.0,0.0,réapprovisionner,1.0
+velo:3f309f3892133f5d460e8e949b403c9b,Toulouse,00240 - PLACE JOB,15.0,43.616945,1.408383,0.0,1.0,délester,1.0
+velo:40057c073bf93a5a28ce408ed1af0419,Toulouse,DELTOUR - RIEUX,22.0,43.591484,1.470014,1.0,0.0,réapprovisionner,1.0
+velov:23c32c01ceae169fe218865b62a4a345,Lyon,PLACE DE LA CROIX-ROUSSE,17.0,45.77608,4.832543,1.0,0.0,réapprovisionner,1.0
+velov:2c09cd407aa81c9d4974435b542725e9,Lyon,CONDORCET,23.0,45.779062,4.866874,0.0,1.0,délester,1.0
+velib:d41d50eb287ee527848755b3a31ee559,Paris,Dunkerque - Alsace,19.0,48.879355,2.358379,1.0,0.0,réapprovisionner,1.0
+velov:be6cc3b05e96df9d565bb8ea5480f630,Lyon,MUSÉE D'ART CONTEMPORAIN,21.0,45.783885,4.852156,0.0,1.0,délester,1.0
+velov:caaa00262fe875175ab25b9f5d41f408,Lyon,TABAREAU,9.0,45.774061,4.82516,1.0,0.0,réapprovisionner,1.0
+velov:c4bcca3990defd3151e5ae364f195ca6,Lyon,PLACE DU 8 MAI 1945,19.0,45.729771,4.868157,1.0,0.0,réapprovisionner,1.0
+velov:c3dd8e71dbe5b393170cc24f998287a7,Lyon,9052 - BALMONT,12.0,45.789194,4.799308,1.0,0.0,réapprovisionner,1.0
+velov:c1cc2af5a14deb70927b2e5d17b23194,Lyon,CHAMPAGNE - MAIRIE,13.0,45.794882,4.792008,1.0,0.0,réapprovisionner,1.0
+velov:c19b5ef5d3a9d38c36bbd586e55ceb24,Lyon,11 NOVEMBRE / GASTON BERGER,35.0,45.779066,4.871581,0.0,1.0,délester,1.0
+velov:bfb444d0d44ff6e92514b45ee1b2b989,Lyon,5029 - PLACE GERSON,20.0,45.767057,4.827014,1.0,0.0,réapprovisionner,1.0
+velov:b6a618705efe5a3a52c3bb41e604515b,Lyon,PLACE DE TRION,14.0,45.757916,4.81317,1.0,0.0,réapprovisionner,1.0
+velov:cc8f3d17df4b0595955a1bf04e5a1e14,Lyon,FOURVIERE,15.0,45.761991,4.821373,1.0,0.0,réapprovisionner,1.0
+velov:b4fa64e5ede0d14c9836b0374b6718c5,Lyon,GAMBETTA / GARIBALDI,38.0,45.751827,4.8526,1.0,0.0,réapprovisionner,1.0
+velov:a78f4a4a2869d717baf9c3cae9c70002,Lyon,PLACE LOUISE,13.0,45.75118,4.884795,1.0,0.0,réapprovisionner,1.0
+velov:a3d4dab6c567f43a260f5ba8fa884247,Lyon,VALDO / RIVET,18.0,45.750497,4.788819,1.0,0.0,réapprovisionner,1.0
+velov:9d25d1642dde4a21d45b662e9febcca8,Lyon,POINT DU JOUR / GRANGES,12.0,45.756204,4.802727,1.0,0.0,réapprovisionner,1.0
+velov:9cb66670116a88fd158aa855e2c3695f,Lyon,PLACE ENNEMOND FOUSSERET,14.0,45.764695,4.828969,1.0,0.0,réapprovisionner,1.0
+velov:99537b452ed964faeeae236427107fc6,Lyon,HÉNON,20.0,45.779786,4.827635,1.0,0.0,réapprovisionner,1.0
+velov:cb0ee5cd58c7b3eaaeeef668ab9fc084,Lyon,VINATIER,19.0,45.741922,4.894068,1.0,0.0,réapprovisionner,1.0
+velov:d7219f18bb6842392acf78aba45fb32c,Lyon,JEAN JAURÈS / GUILLOTIÈRE,9.0,45.75251,4.846278,0.0,1.0,délester,1.0
+velov:3291cad45a86d841a543e16fbc4603cc,Lyon,PLACE RHODIACETA,10.0,45.770991,4.807578,1.0,0.0,réapprovisionner,1.0
+velov:fb611c6e67f856c7b866c8e605a886d8,Lyon,PLACE DES COMPAGNONS DE LA CHANSON,17.0,45.756535,4.796616,1.0,0.0,réapprovisionner,1.0
+vlille:e98ad865e747c26d80dfe31d8ff15967,Lille,Place Trichon,12.0,50.6903353,3.1690075,1.0,0.0,réapprovisionner,1.0
+vlille:838da05201f0d94c2d2678e65a8c8be8,Lille,Mairie de Croix,24.0,50.679123,3.155906,1.0,0.0,réapprovisionner,1.0
+vlille:8312f159d66f526827bd483f19f63768,Lille,F Roosevelt,12.0,50.727453,3.166828,1.0,0.0,réapprovisionner,1.0
+vlille:3f10c17d36ea6f9cb510d816f5531ce6,Lille,Halle aux sucres,19.0,50.644695,3.060867,1.0,0.0,réapprovisionner,1.0
+vlille:2e49a0fdb980c402a2642f1158fe6c45,Lille,Rue Saint Blaise,6.0,50.728798,3.158835,1.0,0.0,réapprovisionner,1.0
+vlille:10d758d119ba87d050a99856de0a8f16,Lille,Hopital Victor Provo,16.0,50.67869,3.172558,1.0,0.0,réapprovisionner,1.0
+velov:ec2f07333c29282b6eebf11162551e57,Lyon,MAISONS NEUVES,21.0,45.755988,4.877409,1.0,0.0,réapprovisionner,1.0
+velov:d7a5d5f0103e993fcbf92757d728573a,Lyon,ECULLY - MAIRIE,11.0,45.775112,4.778531,1.0,0.0,réapprovisionner,1.0
+velov:eac52b0bca41b88a57acd398e9936a00,Lyon,GARIBALDI / BUGEAUD,18.0,45.766708,4.852073,1.0,0.0,réapprovisionner,1.0
+velov:e7c70ea001617fa00bfb7c63aaf03a4c,Lyon,PHILIPPE DE LASSALLE / PILLEMENT,13.0,45.777431,4.820526,1.0,0.0,réapprovisionner,1.0
+velov:e3bc7fa05f775453ee0962f20179ce71,Lyon,VENISSIEUX - MOULIN A VENT,20.0,45.729714,4.854338,1.0,0.0,réapprovisionner,1.0
+velov:df71706a7b7d3918dbe5aca4a953c36f,Lyon,555 - ATELIER VÉLO'V,3.0,45.780403,4.904869,1.0,0.0,réapprovisionner,1.0
+velov:d92dc1c1b905a9890906a95421494744,Lyon,CHAMPVERT,15.0,45.760056,4.798366,1.0,0.0,réapprovisionner,1.0
+velov:d8b49c9e23c2be797404310c6900f668,Lyon,PLACE VALMY,15.0,45.775679,4.805314,1.0,0.0,réapprovisionner,1.0
+velov:93fdd962b59b61741a84df2c3f1a8124,Lyon,LAËNNEC,15.0,45.741425,4.879733,1.0,0.0,réapprovisionner,1.0
+velov:8e7322d27146a38b67de62aafd0845bc,Lyon,JEAN XXIII,13.0,45.740324,4.874192,1.0,0.0,réapprovisionner,1.0
+velov:8b800f2165d24302b600958b89d48436,Lyon,ALLEE DE L'EUROPE,11.0,45.783698,4.794485,1.0,0.0,réapprovisionner,1.0
+velov:412a896968f67b361df2f0bb53fc8b37,Lyon,5055 - BUYER / APOLLINAIRE,20.0,45.762013,4.802751,1.0,0.0,réapprovisionner,1.0
+velov:500804230f3aa8f0f6fff32e0171f657,Lyon,SALENGRO / FEYSSINE,16.0,45.782994,4.890614,1.0,0.0,réapprovisionner,1.0
+velov:4eaa4d2e7cc4ef96886b6dc6c8e55915,Lyon,7041 - DOMER / CHEVREUL,11.0,45.746681,4.844455,0.0,1.0,délester,1.0
+velov:4e451cab8e421f2ac1fd8fa79014f96f,Lyon,CALUIRE - LA ROCHETTE,19.0,45.791748,4.823595,0.0,1.0,délester,1.0
+velov:4b779395a0d0430d50c09cc21995e9cd,Lyon,BOUSSANGES / AUSTERLITZ,17.0,45.775071,4.835499,1.0,0.0,réapprovisionner,1.0
+velov:47e42c887d8dc5b8687525432258acee,Lyon,HALLE TONY GARNIER,20.0,45.730786,4.823733,1.0,0.0,réapprovisionner,1.0
+velov:46388cfbed6b2c7fca13d5a225aaa702,Lyon,ANDREI SAKHAROV,12.0,45.786546,4.797107,1.0,0.0,réapprovisionner,1.0
+velov:3e956af805c822af845210097eb54b09,Lyon,MONTEE DE L'OBSERVANCE,15.0,45.767927,4.809499,1.0,0.0,réapprovisionner,1.0
+velov:87b30a6ef0b32a476bc9eb9fd45f76d3,Lyon,PLACE FLAMMARION,15.0,45.779332,4.820259,1.0,0.0,réapprovisionner,1.0
+velov:36441d3e53679f40cd350d7f90b64a27,Lyon,RUE DE LA BALEINE,13.0,45.763383,4.829024,1.0,0.0,réapprovisionner,1.0
+velov:352c2692669bfced4fd168d911a17373,Lyon,10112 - PLACE DE LA RECONNAISSANCE,30.0,45.754415,4.885249,1.0,0.0,réapprovisionner,1.0
+velov:34992d2f0f44231d70e826d8c01b9a74,Lyon,LES HALLES,17.0,45.761595,4.850477,1.0,0.0,réapprovisionner,1.0
+velov:34878cc68ce81fd4446076c3d30c7557,Lyon,AMBROISE PARÉ,14.0,45.736289,4.883667,1.0,0.0,réapprovisionner,1.0
+velov:338d4c0d8c2baacf5185e42b8fcb22de,Lyon,4006 - PHILIPPE DE LASSALLE,18.0,45.773358,4.821234,1.0,0.0,réapprovisionner,1.0
+velov:329646994bf26906bbb13b15a73bb1e5,Lyon,MÉNIVAL / EISENHOWER,12.0,45.756757,4.783206,1.0,0.0,réapprovisionner,1.0
+velov:56b81b6acb3824a0de9ad79d73058889,Lyon,MASARYK / SAINT-CYR,10.0,45.778639,4.8071,0.0,1.0,délester,1.0
+velov:5968c7d5135facc4bb715955e992c6e4,Lyon,SERGENT BERTHET / GORGE DE LOUP,15.0,45.770136,4.80516,1.0,0.0,réapprovisionner,1.0
+velov:5e08a7642ae353563451fb2d83e11e14,Lyon,CROIX ROUSSE / PERFETTI,20.0,45.772229,4.819389,1.0,0.0,réapprovisionner,1.0
+velov:629aeee1a2bcfaa5278e4b5f53f9ba28,Lyon,DAUPHINÉ / SAINT-MAXIMIN,28.0,45.750002,4.864587,1.0,0.0,réapprovisionner,1.0
+velov:64e9891e30daf3c06928fce92d5d8fa6,Lyon,LAENNEC / PINEL,12.0,45.735375,4.88954,1.0,0.0,réapprovisionner,1.0
+velov:650a96f5123072a9a9bd4d04ead89d46,Lyon,BERTHELOT / GARIBALDI,14.0,45.743756,4.847406,1.0,0.0,réapprovisionner,1.0
+velov:652307afe9b66ab0f0d6811eb61ea0f7,Lyon,VENISSIEUX - MARTYRS DE LA RESISTANCE,15.0,45.693311,4.874029,1.0,0.0,réapprovisionner,1.0
+velov:662da9cbb2f9417b75ced455c35dec80,Lyon,3087 - PART-DIEU / GARIBALDI,19.0,45.762768,4.852563,1.0,0.0,réapprovisionner,1.0
+velov:67c1cf0a31ee2e3ee34673a516763c92,Lyon,QUAI ROMAIN ROLLAND,17.0,45.762045,4.828727,1.0,0.0,réapprovisionner,1.0
+velov:69d249af028778164880a28db06050d1,Lyon,5031 - MÉNIVAL / JOLIOT CURIE,20.0,45.754654,4.78821,1.0,0.0,réapprovisionner,1.0
+velov:6dea3a5f7975f9b758cbc684be5a1175,Lyon,CHAZIÈRE,16.0,45.775425,4.817888,1.0,0.0,réapprovisionner,1.0
+velov:709e3484fc95102d103ccb7709b71f2a,Lyon,MAIRIE DU 4E,16.0,45.774193,4.827743,1.0,0.0,réapprovisionner,1.0
+velov:736fdf865951ad2c0a1e22b688ceb05a,Lyon,RÉCAMIER / TÊTE D'OR,15.0,45.764345,4.853492,1.0,0.0,réapprovisionner,1.0
+velov:73700f49538e28ac8b50a6440da11861,Lyon,10060 - SAINT EXUPÉRY,15.0,45.758874,4.878683,1.0,0.0,réapprovisionner,1.0
+velov:7e332e78d7bea489b1965f5383c72f5f,Lyon,GARE DE VILLEURBANNE,20.0,45.755768,4.891542,1.0,0.0,réapprovisionner,1.0
+velov:7eb193b3476624e8fd4e512630cc4fd5,Lyon,PLACE VARILLON (FUNICULAIRE ST JUST),22.0,45.757319,4.815064,1.0,0.0,réapprovisionner,1.0
+velov:8665f5b84178231835c9de188f3dd2dd,Lyon,ROSA PARKS,15.0,45.786614,4.790101,1.0,0.0,réapprovisionner,1.0
+velib:d485ac89b4bae6ce0f0085c8bc139116,Paris,Victoire - Laffitte,19.0,48.87514373494672,2.338118505144376,0.0,1.0,délester,1.0
+velib:f7fbba029f890b7c1689129b370b9e53,Paris,Ménilmontant - Pelleport,31.0,48.870682633845,2.3989596023316,1.0,0.0,réapprovisionner,1.0
+velib:d2ff4e868f7aeb9639f2ae96c6e83512,Paris,Pirogues de Bercy - Libourne,49.0,48.832308,2.38637,0.0,1.0,délester,1.0
+velib:4530252bbd270e122bc107ff086bc3c3,Paris,Didot - Place de Moro-Giafferi,38.0,48.8337,2.3215,1.0,0.0,réapprovisionner,1.0
+velib:51abcbfbe050871714b1bb647e9b66a3,Paris,Eugène Varlin - Place de la Paix,23.0,48.792862,2.363093,1.0,0.0,réapprovisionner,1.0
+velib:4ef8fdff19582fe28d2ebb83c9bc611e,Paris,Buzenval - Vignoles,17.0,48.853858171688,2.4000040814281,1.0,0.0,réapprovisionner,1.0
+velib:4c195e576b892f6d3350a36e59a52ff3,Paris,Dunkerque - Rocroy,23.0,48.880726,2.351464,1.0,0.0,réapprovisionner,1.0
+velib:4a9c97f9a2e344e91ff9a1006039dd6c,Paris,Abbé Groult - Convention,25.0,48.83596927866069,2.302064039509349,1.0,0.0,réapprovisionner,1.0
+velib:45ef886c03e9db48e33ec3f5ac106d92,Paris,Maréchal Joffre - Verdun,20.0,48.85385,2.470307,1.0,0.0,réapprovisionner,1.0
+velib:4545fb7f92a9c136bd4c2589917e9aa6,Paris,Mairie du 9ème,24.0,48.873267137583,2.3407534480528,0.0,1.0,délester,1.0
+velib:3cd0708a32246f89a7d2ec3fe9c51851,Paris,Quai de la Gare - Pont de Bercy,29.0,48.83730787972,2.3740861260598,0.0,1.0,délester,1.0
+velib:55d766b2cfd797e5962b8a5133cb9a33,Paris,Youri Gagarine - Karl Marx,22.0,48.78448485079149,2.35908430069685,1.0,0.0,réapprovisionner,1.0
+velib:3a4b41ac0677794a7209295f5699987b,Paris,Porte de Ménilmontant,15.0,48.8691543609174,2.40932246879487,1.0,0.0,réapprovisionner,1.0
+velib:3875a220eeda14d9a7c8ffc6b064dc7a,Paris,Porte de Saint Cloud - Parc des Princes,32.0,48.838662757066,2.2525164484978,0.0,1.0,délester,1.0
+velib:346ca47e65c8d9109463e93a9b147742,Paris,Saint-Fargeau - Mortier,29.0,48.87266656122256,2.407912909984589,1.0,0.0,réapprovisionner,1.0
+velib:2fd1582673f2cde85fbf37c87099f528,Paris,Place Centrale,20.0,48.78740167690531,2.2278830409049992,1.0,0.0,réapprovisionner,1.0
+velib:2d0c2d53a9b62caea540c8e4f529df1e,Paris,Hôtel de Ville de Créteil,36.0,48.77699496201,2.4552552404284,0.0,1.0,délester,1.0
+velib:2c1b9fe1588f2a55133e8ecced090087,Paris,Etienne Jodelle - Saint Ouen,32.0,48.88794016394694,2.326124420314341,1.0,0.0,réapprovisionner,1.0
+velib:53384e8a5bfec57267eb3aacba0a41aa,Paris,Square Raymond Souplex,52.0,48.89183721478911,2.335426103165901,1.0,0.0,réapprovisionner,1.0
+velib:55fb78d097a93dde27d5ffb2ed798e6a,Paris,Bachaumont - Montmartre,31.0,48.86617395079137,2.3449775576591496,0.0,1.0,délester,1.0
+velib:872fdfe8bc3d8669b1629ee2d40e0a1d,Paris,Molière - République,30.0,48.81111581390707,2.3145738624448158,1.0,0.0,réapprovisionner,1.0
+velib:76d33163a756fcfe97d74ab87ae2722d,Paris,Faubourg Poissonnière - Dunkerque,28.0,48.880883445404436,2.349934279918671,1.0,0.0,réapprovisionner,1.0
+velib:84d22ec38d74707e8c80a1b4e7a23cff,Paris,Beaubourg - Michel-le-Comte,15.0,48.862534941806,2.3543103039265,0.0,1.0,délester,1.0
+velib:842bd8e36dd32f151107f6bce53085ab,Paris,Uzès - Montmartre,27.0,48.870790980241,2.3431010171771,0.0,1.0,délester,1.0
+velib:80778031e1a033712bfc3a27a190d5dd,Paris,Beaux-Arts - Bonaparte,19.0,48.856451985396,2.3348518833518,0.0,1.0,délester,1.0
+velib:d227853e9d9fc8d6c3e75c3fbe9eaf66,Paris,Frères Flavien - Porte des Lilas,23.0,48.8780992764359,2.41104629853209,1.0,0.0,réapprovisionner,1.0
+velib:7e295427bc65e29626f90d52a934e3b1,Paris,Belleville - Pyrénées,42.0,48.8741908,2.3860039,1.0,0.0,réapprovisionner,1.0
+velib:78f5a9bb8e18d04558fb96cc635dc44a,Paris,Vaugirard - Verrerie,26.0,48.820881336842,2.2367222622987,0.0,1.0,délester,1.0
+velib:76692ca3f594c2495dac1aa4f6779829,Paris,Estienne d'Orves - Henri Ginoux,31.0,48.815388220397274,2.320886790760933,1.0,0.0,réapprovisionner,1.0
+velib:59758c9a187ab61d902e4c599986e3c3,Paris,Gérando - Rochechouart,21.0,48.88294340845,2.3464846238494,1.0,0.0,réapprovisionner,1.0
+velib:7268faf54f66d26bfcde7f0cf3396b50,Paris,Morillons - Dantzig,52.0,48.83310149953933,2.299380004405976,1.0,0.0,réapprovisionner,1.0
+velib:6ca396381dc2e5d8d179d85ae3555abd,Paris,Indre - Prairies,37.0,48.86254398506782,2.403290458023548,1.0,0.0,réapprovisionner,1.0
+velib:6a847ac4b705e2863bba9460a0b320fe,Paris,Le Brun - Gobelins,47.0,48.835092787824,2.3534681351338,1.0,0.0,réapprovisionner,1.0
+velib:6a2afbbf8bede56b4edb7c3ebade0e6c,Paris,Grande Truanderie - Saint-Denis,32.0,48.8626302,2.3498075,0.0,1.0,délester,1.0
+velib:69dc7c72e30b8bf012e18432a41ecb35,Paris,Véron - Lepic,23.0,48.885261233953,2.3345598578453,1.0,0.0,réapprovisionner,1.0
+velib:670bf978de4b76803dee6983a7042953,Paris,Danielle Casanova - Opéra,19.0,48.867643242297,2.3333894088864,0.0,1.0,délester,1.0
+velib:29e2c03ea7b6145d916381f724b7e00a,Paris,Halles - Bourdonnais,20.0,48.860448992575,2.3460162431002,0.0,1.0,délester,1.0
+velib:2823cf5b3d1be84df060c6201455791f,Paris,Payenne - Square George Caïn,24.0,48.8578329,2.3622643,0.0,1.0,délester,1.0
+velib:221fc867f41ead89dc0f824e6ac2dfa4,Paris,Pyrénées - Charles Renouvier,29.0,48.86095933229224,2.400421852042113,1.0,0.0,réapprovisionner,1.0
+v3-bordeaux:752952bd9a6335274a6ec31888789787,Bordeaux,Grosse Cloche,4.0,44.83518,-0.57205,1.0,0.0,réapprovisionner,1.0
+v3-bordeaux:ba919f8528e21b940c007c6cc26c5e1c,Bordeaux,Maison Calixte Camelle,20.0,44.837453,-0.556814,1.0,0.0,réapprovisionner,1.0
+v3-bordeaux:b5696127b9f03ce3ff2e8e1abdeb5037,Bordeaux,Ilots Quinconces,10.0,44.844354,-0.574307,1.0,0.0,réapprovisionner,1.0
+v3-bordeaux:a593edfe848cb3f27ab96f529e146f2e,Bordeaux,Ilot Les Hangars,10.0,44.857934,-0.558128,1.0,0.0,réapprovisionner,1.0
+v3-bordeaux:a1df535f06111719190ef54980ecb780,Bordeaux,Barriere de Pessac,16.0,44.82578,-0.58975,1.0,0.0,réapprovisionner,1.0
+v3-bordeaux:957aaa4117c4b5c11f46b25c7959ba55,Bordeaux,Capucins,20.0,44.82995,-0.56812,1.0,0.0,réapprovisionner,1.0
+v3-bordeaux:82e995e2bbbdda2f5ffc3af8f4473b32,Bordeaux,Pessac Centre,13.0,44.80446,-0.63267,0.0,1.0,délester,1.0
+v3-bordeaux:6666e7f19adbc55ddf6c85fece72a614,Bordeaux,Republique,40.0,44.83483,-0.58019,1.0,0.0,réapprovisionner,1.0
+velib:1f74ab81295c9ceed1a5c6933aee68bc,Paris,Henri Chevreau - Couronnes,26.0,48.87033205312931,2.388777695596218,1.0,0.0,réapprovisionner,1.0
+v3-bordeaux:247b548da19b904300ac26518d8586b7,Bordeaux,Magendie,16.0,44.82789,-0.58605,1.0,0.0,réapprovisionner,1.0
+v3-bordeaux:081bc8c340300bc498d854b4e3ef2499,Bordeaux,Roustaing,15.0,44.81681,-0.58682,1.0,0.0,réapprovisionner,1.0
+v3-bordeaux:07d9299faa8f186e667fb6120388589e,Bordeaux,Ilot CAPC,5.0,44.850136,-0.570166,1.0,0.0,réapprovisionner,1.0
+v3-bordeaux:02a0cf65598bcf0ada8d9fe1a114b550,Bordeaux,CREPS,1.0,44.801376,-0.5971532,1.0,0.0,réapprovisionner,1.0
+le-velo-star:e3f27e8d3d60c68b9a989ab3e8fd3b11,Rennes,TNB,28.0,48.107748,-1.673711,1.0,0.0,réapprovisionner,1.0
+le-velo-star:7c5d8c2292e2e0558f3041e865939b57,Rennes,Département 35,26.0,48.128453,-1.694032,1.0,0.0,réapprovisionner,1.0
+v3-bordeaux:d13686f2eb9b9252e439612cd748ff6d,Bordeaux,Ilot Cap Sciences,5.0,44.860149,-0.554283,1.0,0.0,réapprovisionner,1.0
+velhop:a26aaec0fac4fb2585d44a5a8ec0c2af,Strasbourg,République,9.0,48.587757,7.755487,1.0,0.0,réapprovisionner,1.0
+velhop:af991cea4c872c1e9254260bed77d445,Strasbourg,Parc des Romains,12.0,48.581129,7.723453,1.0,0.0,réapprovisionner,1.0
+velhop:b9d07bda95d03c3ad6dc07ff28db1e88,Strasbourg,Place de Bordeaux,8.0,48.593778,7.757361,1.0,0.0,réapprovisionner,1.0
+velib:011948af9fad35dfda6e1adf45b81bed,Paris,Belleville - Télégraphe,41.0,48.8756045,2.3995549,1.0,0.0,réapprovisionner,1.0
+velib:043d830ea27fbe054ecdf6efd383ffb9,Paris,Place Charles de Gaulle,24.0,48.826073335699,2.1894485725692,1.0,0.0,réapprovisionner,1.0
+velib:050c777552247f22a0333b0f1c69bae8,Paris,Gare de Pont-Cardinet,33.0,48.88713901475306,2.314494143994255,1.0,0.0,réapprovisionner,1.0
+velib:054ad42e8c0d0fb2a30f7e94dd7f982b,Paris,Square Pierre Lazareff,15.0,48.867141720746,2.3483933508396,0.0,1.0,délester,1.0
+velib:05ad4ccc833a5352d12541b7c5bb3b1e,Paris,Marceau - Chaillot,21.0,48.868834023334,2.2986030816809,0.0,1.0,délester,1.0
+velib:07260837e303d24b51d299a8869bfd3b,Paris,Mairie du 2ème,25.0,48.8672190355135,2.3404625437747044,0.0,1.0,délester,1.0
+velib:0b9d4b132376128ea02f1356f3c379ab,Paris,Boyer - Ménilmontant,17.0,48.868895162679,2.3919824145635,1.0,0.0,réapprovisionner,1.0
+velib:0bfdfa685e9f719a5ed04f53d088d9fb,Paris,Hôtel de Ville de Chaville,20.0,48.80887149094033,2.188134044408798,1.0,0.0,réapprovisionner,1.0
+velib:0d541311bdff3e10e72ca692608e13e5,Paris,Square Bela Bartok,23.0,48.850984480382,2.2844360220351,0.0,1.0,délester,1.0
+velib:13708c77fd5a9bac3bf2330ed18dd3e5,Paris,Gare du Nord - La Chapelle,18.0,48.884178287286,2.3561057075858,1.0,0.0,réapprovisionner,1.0
+velib:17518106bd3e7431c47281ab64709822,Paris,Pierret - Madrid,28.0,48.882976576876565,2.260125767248034,0.0,1.0,délester,1.0
+velib:185a5037617ebaca787eac9f98ccaa2c,Paris,Haxo - Darcy,22.0,48.870493041975,2.404957212224,1.0,0.0,réapprovisionner,1.0
+velib:1e90aa257c0939488c0d4a8f67d4c137,Paris,Adrien Lesesne - Docteur Bauer,30.0,48.90263867304635,2.348248063431511,1.0,0.0,réapprovisionner,1.0
+velib:8561b8c39252e8a4287181c7410b932f,Paris,Jean Jaurès - Salvador Allende,43.0,48.821475594736775,2.3026576638221745,1.0,0.0,réapprovisionner,1.0
+velib:7fc31fcfefd948c62d6b9c2b04b10534,Paris,Assas - Rennes,32.0,48.849208499939,2.32851454623,0.0,1.0,délester,1.0
+vlille:fbf0e6f038859dfb683b9fd20229e773,Lille,Linne,6.0,50.676884,3.187817,0.0,1.0,délester,1.0
+velib:90be40125cf9f55a5e9a54a41dea29b3,Paris,Sèvres - Maréchal Juin,18.0,48.8324305,2.2292812,0.0,1.0,délester,1.0
+velib:b13e06697a148035ff70e59774a99363,Paris,Place de la Paix - Abbé Saint-Pierre,24.0,48.86462724459225,2.2047570338469806,1.0,0.0,réapprovisionner,1.0
+velib:a70f7cfe5367e3815e4bb81149e1aeb3,Paris,Louis Rolland - République,26.0,48.81710889740748,2.3193106434955717,1.0,0.0,réapprovisionner,1.0
+velib:8d5e18ea3b29e7080dc930aeea34b28d,Paris,Moncey - Blanche,15.0,48.88006587474148,2.3310810327529907,0.0,1.0,délester,1.0
+velib:a5816027f41b2799e91b665c95e1938d,Paris,Ney - Porte de Clignancourt,25.0,48.8978867,2.3458001,1.0,0.0,réapprovisionner,1.0
+velib:8d718350b29821ee46bbfe1636f9c6be,Paris,Général De Gaulle - Alouette,25.0,48.839109,2.4175664,1.0,0.0,réapprovisionner,1.0
+velib:8fe272d23e3a1f83406b5c8dc8bbc87f,Paris,Général De Gaulle - Vivien,21.0,48.83607420090204,2.4189166724681854,1.0,0.0,réapprovisionner,1.0
+velib:90b0df158e64ee58661addd5a5091470,Paris,Calmette,30.0,48.88104925098552,2.424993216991425,1.0,0.0,réapprovisionner,1.0
+velib:92afdd348c1cb23f0ddf66efc9838172,Paris,Gare du Nord - Saint-Vincent de Paul,22.0,48.880955741648,2.3524305148385,1.0,0.0,réapprovisionner,1.0
+velib:b1f0b90f2fa3212b58f1d0021ac41a84,Paris,Carducci - Place Hannah Arendt,27.0,48.877436681515796,2.3860743641853337,1.0,0.0,réapprovisionner,1.0
+velib:96b8a6032ec2f86759a21a73bc399c76,Paris,Jeanne Hornet - Girardot,27.0,48.873802681432146,2.427820265293122,1.0,0.0,réapprovisionner,1.0
+velib:a41a3140688497dc5a4dc8c262a59e65,Paris,Bréguet - Sabin,33.0,48.856931678257,2.3706749462105,0.0,1.0,délester,1.0
+velib:97abd1f80091fc8dd2696ba4cddbd48a,Paris,Sadi Carnot - François Mitterrand ,27.0,48.87532687671517,2.4241617321968083,1.0,0.0,réapprovisionner,1.0
+velib:a362cf32ab42c2f92c5d73c81b7f8927,Paris,Tourlaque - Damrémont,16.0,48.887912943261,2.3328311485014,1.0,0.0,réapprovisionner,1.0
+velib:9b500b459bb4c0aba959a354251c0cf3,Paris,Quai Panhard et Levassor,57.0,48.828374828097,2.3842737458056,0.0,1.0,délester,1.0
+velib:97be823ff92c0cb7b610995740202bb7,Paris,Quai du Président Roosevelt - Pont Aval,30.0,48.834388367639,2.2656820714474,0.0,1.0,délester,1.0
+velib:9af9913862210207cd74eaf408a28fc7,Paris,Place des Arts - Jean Mermoz,20.0,48.880391139734,2.1832160452221,0.0,1.0,délester,1.0
+velib:b1561c50f08da68c0110740454cb31c3,Paris,Tolbiac - Boussingault,41.0,48.826177754027,2.3420378552202,1.0,0.0,réapprovisionner,1.0
+velib:a98a057a26baa7eaa60ad906bee0f9fe,Paris,Le Vau - Maurice Bertaux,25.0,48.86803439043193,2.411030612453627,1.0,0.0,réapprovisionner,1.0
+velib:ba65681ee1a650bfef62a78064308564,Paris,Place Charles Digeon,32.0,48.84354203133597,2.418427169322968,1.0,0.0,réapprovisionner,1.0
+velib:c1c55be60272e11d93138766ff646764,Paris,Avenir,44.0,48.8103438,2.3003776,1.0,0.0,réapprovisionner,1.0
+velib:d1ba2fc1574bdec823864a3373312d04,Paris,Dunkerque - Maubeuge,34.0,48.880432768947,2.3528900992907,1.0,0.0,réapprovisionner,1.0
+velib:cfb04039b2dd4859a627aaf88b07aaea,Paris,Demi-Lune - Aristide Briand,19.0,48.8762638192,2.4562818557024,1.0,0.0,réapprovisionner,1.0
+velib:cd91e4c9d707d0bebb4bd6677305110e,Paris,Vigée-Lebrun - Anselme Payen,23.0,48.838683941628375,2.3110422492027287,1.0,0.0,réapprovisionner,1.0
+velib:c6a919ba33a2cb3118e772edce4219f5,Paris,Adolphe Lalyre - Armand Silvestre,39.0,48.90406266961591,2.273416221141815,1.0,0.0,réapprovisionner,1.0
+velib:8b6c7f0a58390e17eb9f96b500eb3ff6,Paris,Sydney Bechet - Jacques Gautier,20.0,48.844373437692,2.1882475733068,1.0,0.0,réapprovisionner,1.0
+velib:bb0a4ab4ded73f59ad666a95d0179447,Paris,Pont de Lodi - Dauphine,22.0,48.855296898603285,2.339947307565249,0.0,1.0,délester,1.0
+velib:c60e64b99a2e67f10e36128ac8ba9735,Paris,Square des Saint-Simoniens,24.0,48.8701796,2.3967273,1.0,0.0,réapprovisionner,1.0
+velib:c65b661fd7d7677b8b2884bfa93990db,Paris,Parc des Pierrettes,23.0,48.7973062,2.2909969,1.0,0.0,réapprovisionner,1.0
+velib:bff05c081ad5a7597f093b0b4fbd8e5f,Paris,Saint-Germain - Verdun,30.0,48.882877330093,2.4331868384644,1.0,0.0,réapprovisionner,1.0
+velib:bf825ec63b2762a3c2e10f61cbefe5c5,Paris,Gambetta - Saint Fargeau,23.0,48.871244610447015,2.4039056897163396,1.0,0.0,réapprovisionner,1.0
+velo:0ffd62c7b370457f819114cbac168fd1,Toulouse,NARBONNE - DURAND,17.0,43.557264,1.46541,0.6666666666666666,0.0,réapprovisionner,0.6666666666666666
+velo:395cb4f70dff6bdab066d3bafb9b641d,Toulouse,PAILLE - MONTAIGNE,15.0,43.645516,1.376317,0.6666666666666666,0.0,réapprovisionner,0.6666666666666666
+velib:fa2b28a7180af7d6659c5972ba573a85,Paris,Manin - Simon Bolivar,26.0,48.876499654127,2.3794073625991,0.6666666666666666,0.0,réapprovisionner,0.6666666666666666
+velib:4264d28f99b033dcae11a325376f75b1,Paris,Bellefond - Poissonnière,16.0,48.87759897050706,2.348463758826256,0.6666666666666666,0.0,réapprovisionner,0.6666666666666666
+v3-bordeaux:ee99256d63376bd44c59f6a160b0ace9,Bordeaux,Stade Chaban Delmas,17.0,44.83176,-0.59868,0.6666666666666666,0.0,réapprovisionner,0.6666666666666666
+velib:9b22a6aab0bdce1dd54114e47fcdc00c,Paris,Charles Robin - Grange aux Belles,23.0,48.877376705016,2.3698456519833,0.6666666666666666,0.0,réapprovisionner,0.6666666666666666
+velib:4a0cc53adfa01e61ff8a34dd687a48f9,Paris,Stade Georges Carpentier,40.0,48.820482438381,2.3668321967125,0.6666666666666666,0.0,réapprovisionner,0.6666666666666666
+velib:35dde203e8309584f0f623491acb6c67,Paris,Pont Neuf - Rivoli,25.0,48.860089892617,2.344057559967,0.0,0.6666666666666666,délester,0.6666666666666666
+velib:28e594671e64cb4d0791c989b60c6568,Paris,Suresnes - Muette à Neuilly,28.0,48.868570404348,2.266000919044,0.6666666666666666,0.0,réapprovisionner,0.6666666666666666
+velib:c97c5cffb3759b0598a9d8ac07c3f8da,Paris,Bara - Henri Farman,56.0,48.833218027457846,2.2677567601203923,0.0,0.6666666666666666,délester,0.6666666666666666
+velo:0d6e5979f6ad614551b0bd207461975b,Toulouse,ANCELY TRAMWAY,17.0,43.619301,1.396986,0.6666666666666666,0.0,réapprovisionner,0.6666666666666666
+v3-bordeaux:1b36f34c1a760863bb9e4f4034cc7f0a,Bordeaux,Lycee Bremontier,17.0,44.824307,-0.570524,0.6666666666666666,0.0,réapprovisionner,0.6666666666666666
+velo:115c34618b8a8c823b20ff17d82e1626,Toulouse,RTE DE SEYSSES - LONDRES,18.0,43.568038,1.413363,0.0,0.6666666666666666,délester,0.6666666666666666
+velib:ec6fc091a1c743883d240671121054f9,Paris,Cossonnerie - Sébastopol,23.0,48.861326659084,2.3494196310639,0.0,0.6666666666666666,délester,0.6666666666666666
+velib:eaa35ac247bece89efd3383bc2c7dad4,Paris,Bir Hakeim,32.0,48.853844054334,2.289705348222,0.0,0.6666666666666666,délester,0.6666666666666666
+velib:c3250e94d8848caf3f29646b63ca09a3,Paris,Place Marcel Cachin,32.0,48.81411442356866,2.39090770483017,0.0,0.6666666666666666,délester,0.6666666666666666
+velib:98eb2f2eab4d456bda354b19f9f23418,Paris,Turbigo - Réaumur,31.0,48.865574047531,2.3564198613167,0.0,0.6666666666666666,délester,0.6666666666666666
+velo:b300c82b529acf3161f1ef9cf1f44c68,Toulouse,CURIE - NÉGRENEYS,24.0,43.624514,1.443326,0.6666666666666666,0.0,réapprovisionner,0.6666666666666666
+velo:3e4c45b46e33517f511e82c463159158,Toulouse,ST-MICHEL - MAGENDIE,15.0,43.589553,1.445888,0.6666666666666666,0.0,réapprovisionner,0.6666666666666666
+velo:cbff9e5dc651a318de1772fd61e56829,Toulouse,00044 - PLACE SAINT-JACQUES,21.0,43.597825,1.451609,0.6666666666666666,0.0,réapprovisionner,0.6666666666666666
+velo:f8d19078811b8750e3d763f600fcec0f,Toulouse,MONTAUDRAN GARE,13.0,43.573248,1.48022,0.6666666666666666,0.0,réapprovisionner,0.6666666666666666
+velo:92893a7e386051a43baa9fd8989a9119,Toulouse,PUJOL - CHAUBET,16.0,43.600704,1.467249,0.6666666666666666,0.0,réapprovisionner,0.6666666666666666
+velib:81226f9fbddf1664d075edd369c5511b,Paris,Etienne Marcel - Montorgueil,28.0,48.864505672592,2.3461959511042,0.0,0.6666666666666666,délester,0.6666666666666666
+velo:ebbd2b39c69bdb44d05d268daaad9a00,Toulouse,SAINT-SERNIN - MERLY,15.0,43.609191,1.442749,0.6666666666666666,0.0,réapprovisionner,0.6666666666666666
+velo:e88c9c9f5e70d02f214ec7aeda31d154,Toulouse,CASSELARDIT - FONTAINES,17.0,43.604159,1.407267,0.0,0.6666666666666666,délester,0.6666666666666666
+velo:e0ab499d2b397d2ff965d5ed3a18d033,Toulouse,URSS - MARAN,19.0,43.580915,1.449198,0.6666666666666666,0.0,réapprovisionner,0.6666666666666666
+velib:599ba9ea3625cc347e892274d793ba38,Paris,Bosquet - Saint-Dominique,25.0,48.858651709526,2.3037165802346,0.0,0.6666666666666666,délester,0.6666666666666666
+velib:8d249a46e5837f8bfcc93e5554e19b97,Paris,Porte d'Orléans,48.0,48.8227639,2.3249313,0.6666666666666666,0.0,réapprovisionner,0.6666666666666666
+velo:61330f88909d10be35668ff5ca281078,Toulouse,RIEUX - COTTAGES,18.0,43.585924,1.475057,0.6666666666666666,0.0,réapprovisionner,0.6666666666666666
+velo:dd159912db595605acae4fff21a3cc35,Toulouse,ODYSSUD RITOURET TRAMWAY,16.0,43.635559,1.384149,0.6666666666666666,0.0,réapprovisionner,0.6666666666666666
+velo:562debf52b36e2d878ca9cf74287e478,Toulouse,PLACE ROQUELAINE,24.0,43.612615,1.448286,0.6666666666666666,0.0,réapprovisionner,0.6666666666666666
+velib:52b01c04fa532057be420f9adf40023b,Paris,Place des Ardoines,44.0,48.782903985673,2.406949982641,0.0,0.6666666666666666,délester,0.6666666666666666
+velo:9f61c876d7169b4613419cc5ffcfc814,Toulouse,JAURÈS - BONREPOS,24.0,43.609222,1.453542,0.6666666666666666,0.0,réapprovisionner,0.6666666666666666
+velo:c1ab66b6554955d83f973d2f2e75773b,Toulouse,CARTOUCHERIE TRAMWAY,11.0,43.602797,1.408133,0.0,0.6666666666666666,délester,0.6666666666666666
+velo:907ec393dbde95ac04c5fd77cdc11848,Toulouse,11 NOVEMBRE - NÉGOGOUSSES,17.0,43.593052,1.414659,0.6666666666666666,0.0,réapprovisionner,0.6666666666666666
+velib:5554d5346800146173e3a83b2a21304f,Paris,Pajol - Riquet ,47.0,48.88960028134536,2.3628534749150276,0.6666666666666666,0.0,réapprovisionner,0.6666666666666666
+velo:fffa1c5961ca0cedf9381436e336aa29,Toulouse,00028 - PLACE SAINT-PIERRE,21.0,43.603228,1.436034,0.0,0.3333333333333333,délester,0.3333333333333333
+velo:f46da5d66c4b06a420297366720368ee,Toulouse,ÉTATS-UNIS - CHARLAS,20.0,43.630519,1.43234,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velib:02eedfc09ac05202f5fb02b295e79c18,Paris,Port Royal - Hôpital Cochin,23.0,48.838608030238,2.3406994164846,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velib:b2ecfbe37576fd2c3ad451558f000232,Paris,Victoria - Place du Chatelet,21.0,48.857992591527,2.3469167947769,0.0,0.3333333333333333,délester,0.3333333333333333
+velib:ba37a6aea713b50c7b67705f1aff3040,Paris,Mairie du 20ème,26.0,48.865302324275,2.3990669846535,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velo:fdbcc7675a28af3a992118b6b366b4ac,Toulouse,ANDROMÈDE LYCÉE TRAMWAY,16.0,43.654817,1.375528,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velib:cfd0fbc11c919802ae91c2eb8839bc29,Paris,Sainte-Elisabeth - Turbigo,31.0,48.86610337431,2.3596492409706,0.0,0.3333333333333333,délester,0.3333333333333333
+le-velo-star:f1e7562ccefbae93a1a890d1027590b0,Rennes,Horizons,24.0,48.111545,-1.689758,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velo:ba3f219aa53b33f0eec5cb4178b1e0c2,Toulouse,BRUNHES - FONTAINES,13.0,43.600473,1.420165,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velo:94fbf7c13d4cfed4e307ac2b67d80790,Toulouse,00372 - REYNERIE MÉTRO,13.0,43.571497,1.402857,0.0,0.3333333333333333,délester,0.3333333333333333
+velo:d7affbcab2686fd71c94df2afbd943b8,Toulouse,VESTREPAIN - BAGATELLE,12.0,43.584492,1.411057,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+vlille:4d778955fc6ca062f6b76429898744ef,Lille,Jean Sans Peur,14.0,50.632423,3.05831,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+v3-bordeaux:970036beb43b12fd018c2a9a579f81d8,Bordeaux,Barriere St Genes,36.0,44.82209,-0.58178,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velib:c1e69c64deeb554320e40ab9dd9e10f7,Paris,Bagnolet - Place Saint-Blaise,26.0,48.85973,2.40334,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+vlille:3eebbdd73d4fab682717a76fd25a6ca6,Lille,Victor Provo,16.0,50.68079,3.167454,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velo:ca54b0e2cb72b6b08785b1d3856bcdeb,Toulouse,VOSGES - BEAUCE,8.0,43.581868,1.419446,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velo:45d935998727add4e2367991595eccd1,Toulouse,RIEUX - CHANT DU MERLE,18.0,43.597355,1.459063,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velib:04a5d2de31469c260992b054d490cea9,Paris,Ney - Porte de Montmartre,24.0,48.897918,2.3364872,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velo:90743290a8dcdb3329db70dc59112077,Toulouse,RTE DE BLAGNAC - PUCCINI,17.0,43.614514,1.411161,0.0,0.3333333333333333,délester,0.3333333333333333
+velo:45f63619db1e72038d95e272e8499d6f,Toulouse,PLACE DES TIBAOUS,13.0,43.550424,1.386158,0.0,0.3333333333333333,délester,0.3333333333333333
+velib:4e5d45e2645f52e7e1c603bfd3b99569,Paris,Orteaux - Mouraud,24.0,48.855586428479,2.4087629077647,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velib:3fe133b3337b2a5907425b8e243a8e59,Paris,Amaury Duval - Gabriel Péri,36.0,48.81718759671675,2.323841750621796,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velo:b92d4b21e02ad6eb1d5024256804fd6a,Toulouse,00279 - CASSELARDIT - ESPAGNO,17.0,43.613555,1.401417,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velib:37f52e87678de52101456c4e9b386b1b,Paris,BNF - Bibliothèque Nationale de France,53.0,48.8350268238,2.3760157451034,0.0,0.3333333333333333,délester,0.3333333333333333
+velo:5df49bea3127887b7c9c0f0d71076100,Toulouse,GLOIRE - CHIRAC,13.0,43.606975,1.473375,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velib:323ff75e83a2550646f17439b335ff4a,Paris,Place Alphonse Deville,23.0,48.850188262662,2.3275961726904,0.0,0.3333333333333333,délester,0.3333333333333333
+velib:301c03cb4f7233db98908633196d4ea2,Paris,Choisy - Tolbiac,18.0,48.82591155587,2.3602393269539,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velib:9fc247da248648d7b775afef4e61c53d,Paris,Tristan Tzara -  Tchaïkovski,33.0,48.89490221746837,2.3648490384221077,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velo:1d2bf8a471c69c7b10a10c9cf5f86578,Toulouse,REYNERIE - LONDRES,12.0,43.569148,1.408256,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velo:1d062a3257de00f6c5e317b769f0edc0,Toulouse,AMOUROUX - STE-AUGUSTINE,17.0,43.627643,1.461861,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velo:65c4aed3bf0bb80c567f3b909b8f2e36,Toulouse,DEODAT - ARCS ST-CYPRIEN,12.0,43.590111,1.423003,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velo:11678f06c6a76cc341ba622e5be85b54,Toulouse,PALAIS DE JUSTICE  MÉTRO,11.0,43.592782,1.444726,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velib:21dd121ff400eb6315235508f2d5cff0,Paris,Pontoise - La Tournelle,22.0,48.850458009188,2.3524542754922,0.0,0.3333333333333333,délester,0.3333333333333333
+velib:66011897fd7101a7bb10b9e85558fe53,Paris,Evariste Galois,21.0,48.873341356228,2.4133544409574,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velib:6dfb5192fb139d203175e04219fea536,Paris,Louis Lejeune - Barbès,25.0,48.81807418981508,2.3267009854316716,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velib:714f99ee52cc477714e0d084246e9038,Paris,Bourdonnais - Tour Eiffel,57.0,48.860897797941,2.295599598447,0.0,0.3333333333333333,délester,0.3333333333333333
+velo:090f3667778c626587f297145fbde4f6,Toulouse,00057 - ARCOLE - MERLY,15.0,43.6103,1.442975,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velo:7e3820e535fe3b0e11d0ef026b9f46df,Toulouse,DAURAT - CORNEMONT,11.0,43.56481,1.488996,0.0,0.3333333333333333,délester,0.3333333333333333
+velib:0e3c0f14de288ac43c5a8b0a1cbc33b9,Paris,André Karman - République,31.0,48.91039875761846,2.3851355910301213,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velib:a59f867a689ec8bab0b42e27b783d44f,Paris,Place de l'Hôtel de Ville,13.0,48.8573314,2.351458,0.0,0.3333333333333333,délester,0.3333333333333333
+velo:901c6f0f118f8564ab74e292bd358a56,Toulouse,DEMOISELLES - CRAMPEL,19.0,43.58771,1.459838,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velib:7c58b341c5c0844331cdc2a812b666c8,Paris,Roland Garros - Jean Bouin,28.0,48.809460857173,2.2853198638301,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velib:a9bc03f19bd965f2edd21e4292c15c67,Paris,Institut de France,33.0,48.857615678565,2.3358313530377,0.0,0.3333333333333333,délester,0.3333333333333333
+velo:422e4ec79242c3c42ed4c13d24e757c8,Toulouse,00093 - BD MATABIAU - INGRES,17.0,43.614574,1.443571,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333
+velib:7caaf63216ae02be12a826198641e5a6,Paris,Saint-Maur - Roquette,63.0,48.858688774063,2.3835539945715,0.3333333333333333,0.0,réapprovisionner,0.3333333333333333

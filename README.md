@@ -40,12 +40,18 @@ urbanhub/
 │   │   ├── download.py      # téléchargement parallèle
 │   │   └── clean.py         # nettoyage -> parquet
 │   └── streaming_citybikes/ # partie 2
+│       ├── config.py        # réseaux des grandes villes, intervalle de collecte
+│       ├── collector.py     # collecte automatique toutes les 2 min 30
+│       └── process.py       # snapshots bruts -> parquet
 ├── notebooks/
-│   └── 01_partie1_meteo_batch.ipynb
+│   ├── 01_partie1_meteo_batch.ipynb
+│   └── 02_partie2_velos_streaming.ipynb
 ├── tests/
 ├── data/                    # data lake (non versionné)
 │   ├── raw/noaa/year=YYYY/STATION.csv
-│   └── processed/noaa/year=YYYY/STATION.parquet
+│   ├── raw/citybikes/dt=YYYY-MM-DD/RESEAU/HHMMSS.json.gz
+│   ├── processed/noaa/year=YYYY/STATION.parquet
+│   └── processed/citybikes/dt=YYYY-MM-DD.parquet
 └── reports/                 # figures et résultats
 ```
 
@@ -103,6 +109,36 @@ le point de rosée n'était pas demandé mais on le garde : c'est lui qui expliq
 3. évolution saisonnière : moyennes mensuelles france + grandes villes, cycle saisonnier par ville
 4. jours extrêmes : seuils absolus (canicule, grand froid, vent, pluie, brouillard) + seuils relatifs au climat de chaque station
 
+## partie 2 — mobilité urbaine (streaming CityBikes)
+
+source : [API CityBikes](https://api.citybik.es/v2/), état en temps réel des stations de vélos en libre-service. 10 réseaux : vélib' (paris), vélo'v (lyon), levélo (marseille), vélô (toulouse), bicloo (nantes), vélhop (strasbourg), vélomagg (montpellier), v³ (bordeaux), v'lille (lille), le vélo star (rennes). nice n'a pas de réseau à stations dans CityBikes (pony est en free-floating). le flux de levélo (marseille) déclare 0 vélo sur toutes ses stations à chaque collecte : il est collecté mais exclu des analyses tant que c'est le cas.
+
+```powershell
+# 1. collecte en continu (laisser tourner dans un terminal dédié, Ctrl+C pour arrêter)
+python -m src.streaming_citybikes.collector
+
+# 2. traitement des snapshots bruts
+python -m src.streaming_citybikes.process
+
+# 3. analyse
+jupyter notebook notebooks/02_partie2_velos_streaming.ipynb
+```
+
+**collecte** : toutes les 2 min 30, les 10 réseaux sont interrogés en parallèle. la réponse brute est stockée telle quelle (compressée) dans le data lake, partitionnée par jour et par réseau, ce qui permet de rejouer le traitement sans rappeler l'api. seule la liste des identifiants de vélos (`bike_uids`) est retirée, car elle est volumineuse et inutile. un réseau en panne n'arrête pas la collecte. les collectes sont calées sur une grille fixe, donc pas de dérive dans le temps.
+
+limite importante : l'api ne donne que l'état actuel des stations, sans historique. il est impossible de récupérer les données « depuis l'existence du réseau vélib' ». la période d'analyse est la période pendant laquelle le collecteur a tourné.
+
+**traitement** : aplatissement du json, timestamps convertis en utc (l'api renvoie un format non standard `+00:00Z`), stations virtuelles et hors service (ni prêt ni retour possible) écartées, capacité = vélos + places libres, dédoublonnage station/collecte, un parquet par jour.
+
+variables : `station_id`, `station_name`, `latitude`, `longitude`, `timestamp`, `bikes_available`, `free_slots`, plus `collected_at`, `capacity`, `network`, `city`.
+
+**questions métier** (notebook) :
+1. taux d'utilisation : rotations par jour (mouvements de vélos / capacité), estimées à partir des variations entre deux collectes
+2. offre insuffisante : carroyage ~1 km, zones où les stations sont vides plus de 25 % du temps
+3. pics journaliers : activité par heure, semaine vs week-end, vélos en circulation
+4. déséquilibres géographiques : remplissage selon la distance au centre et le créneau horaire (mouvement pendulaire), cartes matin/soir
+5. stations critiques : vides ou pleines plus de 30 % du temps aux heures de pointe → à réapprovisionner / à délester
+
 ## tests
 
 ```powershell
@@ -112,4 +148,6 @@ python -m pytest tests -v
 $env:URBANHUB_DATA_DIR="C:\temp\urbanhub_test"
 python -m tests.make_sample_data
 python -m src.batch_noaa.clean
+python -m tests.make_sample_citybikes
+python -m src.streaming_citybikes.process
 ```
