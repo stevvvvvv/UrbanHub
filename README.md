@@ -2,7 +2,7 @@
 
 jumeau numérique urbain : ingestion et analyse de données smart city (météo, mobilité, pollution) sur les principales villes de france.
 
-projet final mastère big data & ia — ipssi — steven jansen & julien cantau
+projet final mastère big data & ia — ipssi — steven jansen & julien cantau & mohamed elkaddouri
 
 ## architecture
 
