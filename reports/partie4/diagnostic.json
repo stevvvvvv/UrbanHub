@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-11-19T14:31:55.299429+00:00",
+  "processed_dir": "/Users/Julien_CANTAU/ecole/UrbanHub/data/processed",
+  "bike_source": "absent",
+  "lignes_jointes": {
+    "meteo_velos": 0,
+    "meteo_pollution": 0,
+    "pollution_velos": 0,
+    "trois_flux": 0
+  },
+  "notes": [
+    "Vélos : absent.",
+    "Source absente : openmeteo/weather_hourly.parquet.",
+    "Source absente : openaq/pollution_clean.parquet.",
+    "Source absente : noaa_daily.parquet.",
+    "meteo_velos : aucun couple d'observations simultanées exploitable.",
+    "meteo_pollution : aucun couple d'observations simultanées exploitable.",
+    "pollution_velos : aucun couple d'observations simultanées exploitable.",
+    "trois_flux : aucun couple d'observations simultanées exploitable."
+  ],
+  "minimum_correlation": {
+    "observations": 30,
+    "jours": 7
+  }
+}

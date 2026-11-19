@@ -26,7 +26,7 @@ flowchart TD
 |---|---|---|
 | 1 | batch — météo NOAA | steven |
 | 2 | streaming — vélos CityBikes | steven |
-| 3 | IoT — pollution OpenAQ | julien |
+| 3 | IoT — pollution OpenAQ | contribution intégrée via PR #1 |
 | 4 | analyse croisée | julien |
 
 ## structure
@@ -39,13 +39,17 @@ urbanhub/
 │   │   ├── stations.py      # liste des stations FR (isd-history)
 │   │   ├── download.py      # téléchargement parallèle
 │   │   └── clean.py         # nettoyage -> parquet
-│   └── streaming_citybikes/ # partie 2
-│       ├── config.py        # réseaux des grandes villes, intervalle de collecte
-│       ├── collector.py     # collecte automatique toutes les 2 min 30
-│       └── process.py       # snapshots bruts -> parquet
+│   ├── streaming_citybikes/ # partie 2
+│   │   ├── config.py        # réseaux des grandes villes, intervalle de collecte
+│   │   ├── collector.py     # collecte automatique toutes les 2 min 30
+│   │   └── process.py       # snapshots bruts -> parquet
+│   ├── iot_openaq/          # partie 3 (PR #1 intégrée)
+│   └── analysis_cross/      # partie 4 : préparation, météo, jointures, rapports
 ├── notebooks/
 │   ├── 01_partie1_meteo_batch.ipynb
-│   └── 02_partie2_velos_streaming.ipynb
+│   ├── 02_partie2_velos_streaming.ipynb
+│   ├── 03_partie3_pollution_iot.ipynb
+│   └── 04_partie4_analyse_croisee.ipynb
 ├── tests/
 ├── data/                    # data lake (non versionné)
 │   ├── raw/noaa/year=YYYY/STATION.csv
@@ -151,3 +155,40 @@ python -m src.batch_noaa.clean
 python -m tests.make_sample_citybikes
 python -m src.streaming_citybikes.process
 ```
+
+
+## partie 3 — pollution OpenAQ (contribution intégrée)
+
+Le pipeline et le notebook 03 ont été intégrés via la PR #1. Depuis la racine, après configuration de `OPENAQ_API_KEY` dans l'environnement :
+
+```bash
+python -m src.iot_openaq.collector
+python -m src.iot_openaq.process
+python -m src.iot_openaq.history
+python -m src.iot_openaq.process
+jupyter notebook notebooks/03_partie3_pollution_iot.ipynb
+```
+
+Cette version collecte quelques localisations françaises et sept jours d'historique pour un capteur NO₂ parisien ; son nettoyage conserve les 30 derniers jours. Elle ne fournit pas encore l'historique 2021–2025 requis pour un croisement NOAA. Voir les limites détaillées dans [la documentation de la partie 4](docs/partie4_analyse_croisee.md).
+
+## partie 4 — analyse croisée (Julien Cantau)
+
+Code : `src/analysis_cross/`. Notebook : [04_partie4_analyse_croisee.ipynb](notebooks/04_partie4_analyse_croisee.ipynb).
+
+Après les traitements précédents et l'export journalier du notebook 01 :
+
+```bash
+# Météo aux dates de collecte vélo (API sans clé, réponses brutes conservées)
+python -m src.analysis_cross.weather
+# Jointures et rapports, sans appel réseau
+python -m src.analysis_cross.run
+jupyter notebook notebooks/04_partie4_analyse_croisee.ipynb
+```
+
+Les parquets vélo par station sont préférés à l'export horaire 02 : la partie 4 recalcule les stocks moyens et rapporte les mouvements au temps réellement observé. Si seul l'export 02 existe, seule son information de remplissage est exploitée.
+
+Quatre croisements : météo actuelle–vélos, NOAA–pollution journalière, pollution–vélos et intersection des trois flux. Les jointures utilisent uniquement les dates communes ; les polluants et unités restent séparés. Les sorties sont dans `data/processed/cross_analysis/` et `reports/partie4/`.
+
+Sans fichiers réels, le notebook produit un diagnostic de sources absentes ; aucune donnée simulée n'est présentée comme un résultat. Les corrélations sont descriptives et exigent au moins 30 observations sur sept jours. Le croisement NOAA–pollution nécessite un historique OpenAQ absent de la version actuelle.
+
+**Documentation détaillée de la contribution, calculs, commandes et trame de soutenance : [docs/partie4_analyse_croisee.md](docs/partie4_analyse_croisee.md).**
