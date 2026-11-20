@@ -169,7 +169,7 @@ python -m src.iot_openaq.process
 jupyter notebook notebooks/03_partie3_pollution_iot.ipynb
 ```
 
-Cette version collecte quelques localisations françaises et sept jours d'historique pour un capteur NO₂ parisien ; son nettoyage conserve les 30 derniers jours. Elle ne fournit pas encore l'historique 2021–2025 requis pour un croisement NOAA. Voir les limites détaillées dans [la documentation de la partie 4](docs/partie4_analyse_croisee.md).
+La version initiale collectait quelques localisations françaises et sept jours pour un capteur parisien ; voir la correction du 20 novembre en fin de README. Elle ne fournit pas encore l'historique 2021–2025 requis pour un croisement NOAA. Voir les limites détaillées dans [la documentation de la partie 4](docs/partie4_analyse_croisee.md).
 
 ## partie 4 — analyse croisée (Julien Cantau)
 
@@ -192,3 +192,18 @@ Quatre croisements : météo actuelle–vélos, NOAA–pollution journalière, p
 Sans fichiers réels, le notebook produit un diagnostic de sources absentes ; aucune donnée simulée n'est présentée comme un résultat. Les corrélations sont descriptives et exigent au moins 30 observations sur sept jours. Le croisement NOAA–pollution nécessite un historique OpenAQ absent de la version actuelle.
 
 **Documentation détaillée de la contribution, calculs, commandes et trame de soutenance : [docs/partie4_analyse_croisee.md](docs/partie4_analyse_croisee.md).**
+
+
+## correction des parties 3 et 4 (20 novembre 2026)
+
+La collecte OpenAQ a été reprise : recherche dans un rayon de 15 km autour des onze villes, pagination, historique mensuel reprenable, conservation des mesures anciennes. Cette sélection décrit les environs des villes, pas leurs limites administratives. La disponibilité 2021–2025 reste à vérifier dans les réponses API, elle n'est pas garantie.
+
+```bash
+# Définir OPENAQ_API_KEY dans l'environnement, puis :
+python -m src.iot_openaq.history --start 2021-01-01 --end 2025-08-31
+python -m src.iot_openaq.process
+```
+
+`--refresh` renouvelle le cache. `collector` récupère désormais les heures agrégées des deux derniers jours, pas un historique vélo. Les notebooks 03 et 04 sont livrés sans résultats enregistrés tant que les données réelles ne sont pas disponibles. Le notebook 04 s'arrête si les sources manquent ; les anciens rapports vides ont été retirés. La durée de sept jours est un seuil de calcul des corrélations, pas une condition pour charger et inspecter dix minutes de données.
+
+Le notebook 03 couvre concentrations par ville, profils horaires locaux, dominance en concentration massique sur heures communes et anomalies. Les figures sont sauvegardées dans `reports/figures/partie3/`. Aucun résultat empirique n'a encore été validé sur cette machine : données du groupe et clé absentes.

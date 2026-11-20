@@ -66,7 +66,7 @@ jupyter notebook notebooks/04_partie4_analyse_croisee.ipynb
 python -m pytest tests -v
 ```
 
-Le notebook n'appelle aucune API. Il fonctionne en l'absence de certaines sources et affiche les diagnostics correspondants. Une source présente mais mal formée entraîne une erreur explicite plutôt qu'un résultat silencieusement vide.
+Le notebook n’appelle aucune API. Il exige les sources réelles avant tout export ; le CLI peut toujours produire un diagnostic de sources absentes. Une source présente mais mal formée entraîne une erreur explicite plutôt qu'un résultat silencieusement vide.
 
 Pour changer de data lake, définir `URBANHUB_DATA_DIR` avant de lancer Python/Jupyter. Le CLI accepte aussi des répertoires explicites pour isoler les exports :
 
@@ -123,7 +123,7 @@ Les quatre tables dans `data/processed/cross_analysis/` :
 
 Dans `reports/partie4/` : `couverture.csv`, quatre fichiers `correlations_*.csv`, `diagnostic.json`, `synthese.md`. Le notebook ajoute `audit_villes.csv`, les figures, ainsi que les comparaisons pluie/sec et profils horaires si les données le permettent. L'audit montre les effectifs et bornes de chaque source ; les tables jointes donnent la couverture effectivement commune.
 
-## Limites héritées de la version OpenAQ intégrée
+## Limites constatées avant correction (version initiale OpenAQ)
 
 L'inspection du code intégré montre que :
 
@@ -132,7 +132,7 @@ L'inspection du code intégré montre que :
 3. `process.py` élimine les mesures de plus de 30 jours : injecter un historique ancien ne suffit donc pas à le rendre exploitable.
 4. Les chemins de cette partie sont relatifs à la racine et ne suivent pas encore `URBANHUB_DATA_DIR`.
 
-Pour obtenir le croisement NOAA–OpenAQ réel, le groupe doit étendre cette collecte (inventaire/pagination et disponibilité des capteurs, plages historiques explicites, conservation des anciennes données). La partie 4 prend déjà en charge l'historique une fois celui-ci fourni au format nettoyé attendu. Ces changements n'ont pas été faits dans la contribution du collègue afin de garder un périmètre de responsabilité clair.
+Pour obtenir le croisement NOAA–OpenAQ réel, le groupe doit étendre cette collecte (inventaire/pagination et disponibilité des capteurs, plages historiques explicites, conservation des anciennes données). La partie 4 prend déjà en charge l'historique une fois celui-ci fourni au format nettoyé attendu. Ces points ont depuis été corrigés dans le code : recherche géographique, pagination, plages historiques et chemins communs. La disponibilité et la collecte effective restent à vérifier avec une clé API.
 
 ## Trame de présentation orale
 

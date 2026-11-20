@@ -1,85 +1,83 @@
+"""Inventaire géographique et historique paginé, avec cache mensuel.
 
+python -m src.iot_openaq.history --start 2021-01-01 --end 2025-08-31
+La disponibilité réelle des capteurs est enregistrée dans coverage_locations.json.
+"""
+import argparse
 import json
-from datetime import datetime, timedelta, timezone
-from pathlib import Path
-
+import os
 import pandas as pd
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+from .config import BASE_URL, DATA_DIR, POLLUTANTS
+from src.streaming_citybikes.config import CITY_CENTERS
 
-from .config import API_KEY, BASE_URL
+
+def pages(session, endpoint, params):
+    page = 1
+    while True:
+        r = session.get(BASE_URL + endpoint, params=params | {"page": page, "limit": 1000}, timeout=60)
+        r.raise_for_status()
+        payload = r.json()
+        rows = payload.get("results", [])
+        yield from rows
+        if len(rows) < 1000:
+            break
+        page += 1
 
 
-def collect_history():
-    if not API_KEY:
-        raise RuntimeError("OPENAQ_API_KEY manquante")
-
-    df = pd.read_parquet(
-        "data/processed/openaq/pollution_clean.parquet"
-    )
-
-    # Choisir un capteur NO2 à Paris
-    paris = df[
-        df["city"].fillna("").str.contains(
-            "PARIS", case=False, regex=False
-        )
-        & (df["pollutant"] == "no2")
-    ]
-
-    if paris.empty:
-        print("Aucun capteur NO2 parisien trouvé.")
-        return
-
-    sensor = paris.iloc[0]
-    sensor_id = int(sensor["sensor_id"])
-
-    end = datetime.now(timezone.utc)
-    start = end - timedelta(days=7)
-
-    response = requests.get(
-        f"{BASE_URL}/sensors/{sensor_id}/hours",
-        headers={"X-API-Key": API_KEY},
-        params={
-            "datetime_from": start.isoformat(),
-            "datetime_to": end.isoformat(),
-            "limit": 1000,
-            "page": 1,
-        },
-        timeout=60,
-    )
-    response.raise_for_status()
-
-    results = response.json().get("results", [])
-
-    records = []
-    for item in results:
-        records.append({
-            "sensor_id": sensor_id,
-            "station_id": int(sensor["station_id"]),
-            "station_name": sensor["station_name"],
-            "city": sensor["city"],
-            "pollutant": sensor["pollutant"],
-            "unit": sensor["unit"],
-            "value": item.get("value"),
-            "timestamp": (item.get("period") or {})
-                         .get("datetimeFrom", {})
-                         .get("utc"),
-            "latitude": sensor["latitude"],
-            "longitude": sensor["longitude"],
-        })
-
-    output_dir = Path("data/raw/openaq")
-    output_dir.mkdir(parents=True, exist_ok=True)
-
-    output = output_dir / "history_paris_no2.json"
-    output.write_text(
-        json.dumps(records, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
-
-    print(f"Capteur : {sensor_id}")
-    print(f"Mesures historiques : {len(records)}")
-    print(f"Fichier : {output}")
+def collect_history(start="2021-01-01", end="2025-08-31", refresh=False):
+    key = os.getenv("OPENAQ_API_KEY")
+    if not key:
+        raise RuntimeError("Configurer OPENAQ_API_KEY dans l'environnement")
+    lo, hi = pd.Timestamp(start, tz="UTC"), pd.Timestamp(end, tz="UTC")
+    if lo > hi:
+        raise ValueError("La date de début doit précéder la fin")
+    raw = DATA_DIR / "raw/openaq"
+    raw.mkdir(parents=True, exist_ok=True)
+    session = requests.Session()
+    session.headers["X-API-Key"] = key
+    session.mount("https://", HTTPAdapter(max_retries=Retry(total=5, backoff_factor=2,
+        status_forcelist=[429, 500, 502, 503, 504], respect_retry_after_header=True)))
+    inventory = []
+    for city, (lat, lon) in CITY_CENTERS.items():
+        locations = list(pages(session, "/locations", {"coordinates": f"{lat},{lon}", "radius": 15000}))
+        inventory.append({"city": city, "radius_m": 15000, "locations": locations})
+        (raw / "coverage_locations.json").write_text(json.dumps(inventory, ensure_ascii=False), encoding="utf-8")
+        for location in locations:
+            for sensor in location.get("sensors", []):
+                parameter = sensor["parameter"]
+                if parameter["name"].lower() not in POLLUTANTS:
+                    continue
+                for month in pd.date_range(lo.normalize().replace(day=1), hi, freq="MS"):
+                    begin = max(lo, month)
+                    finish = min(hi + pd.Timedelta(days=1), month + pd.offsets.MonthBegin(1))
+                    out = raw / f"history_{city}_{sensor['id']}_{begin.date()}_{finish.date()}.json"
+                    if out.exists() and not refresh:
+                        continue
+                    records = []
+                    for item in pages(session, f"/sensors/{sensor['id']}/hours", {
+                        "datetime_from": begin.isoformat(), "datetime_to": finish.isoformat()}):
+                        timestamp = item.get("period", {}).get("datetimeFrom", {}).get("utc")
+                        if timestamp is None or not begin <= pd.Timestamp(timestamp) < finish:
+                            continue
+                        coords = location.get("coordinates") or {}
+                        records.append(dict(sensor_id=sensor["id"], station_id=location["id"],
+                            station_name=location.get("name"), city=city, locality=location.get("locality"),
+                            pollutant=parameter["name"].lower(), unit=parameter["units"],
+                            value=item.get("value"), timestamp=timestamp,
+                            latitude=coords.get("latitude"), longitude=coords.get("longitude")))
+                    temp = out.with_suffix(".tmp")
+                    temp.write_text(json.dumps(records, ensure_ascii=False), encoding="utf-8")
+                    temp.replace(out)
+                    print(city, sensor["id"], begin.date(), len(records))
 
 
 if __name__ == "__main__":
-    collect_history()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--start", default="2021-01-01")
+    parser.add_argument("--end", default="2025-08-31")
+    parser.add_argument("--refresh", action="store_true")
+    args = parser.parse_args()
+    collect_history(args.start, args.end, args.refresh)

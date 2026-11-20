@@ -5,8 +5,9 @@ from pathlib import Path
 import pandas as pd
 
 
-RAW_DIR = Path("data/raw/openaq")
-PROCESSED_DIR = Path("data/processed/openaq")
+from .config import DATA_DIR
+RAW_DIR = DATA_DIR / "raw/openaq"
+PROCESSED_DIR = DATA_DIR / "processed/openaq"
 
 
 def process_openaq():
@@ -20,6 +21,9 @@ def process_openaq():
     # Charger les fichiers JSON
     frames = [pd.read_json(file) for file in files]
     df = pd.concat(frames, ignore_index=True)
+    if df.empty:
+        print("Aucune mesure dans les réponses OpenAQ : vérifier la couverture et les dates.")
+        return
 
     print(f"Mesures brutes : {len(df)}")
 
@@ -31,13 +35,8 @@ def process_openaq():
         df["value"], errors="coerce"
     )
 
-    # Garder uniquement les mesures des 30 derniers jours
-    cutoff = pd.Timestamp.now(tz="UTC") - pd.Timedelta(days=30)
-
-    df = df[
-        (df["timestamp"] >= cutoff)
-        & (df["timestamp"] <= pd.Timestamp.now(tz="UTC"))
-    ]
+    # Conserver l'historique : seules les dates futures sont exclues.
+    df = df[df["timestamp"] <= pd.Timestamp.now(tz="UTC")]
 
     # Supprimer les données incorrectes
     df = df.dropna(
